@@ -16,3 +16,13 @@ qnorm(0.159837, mean = mean(Sampledata$Return), sd = +sd(Sampledata$Return, na.r
 
 #this gives us an output 0.02, which means that for the return of greater than equal 2% the prob is 16% 
 
+#rnorm is used to generate random numbers 
+
+rnorm(5, mean = mean(Sampledat$Reutrn), sd = +sd(Sampledata$Return, na.rm = FALSE) 
+
+
+#in a fincial time series, the lornormal distrbuction plays a more critical role than the noraml distrbution 
+#dlnorm(x, meanlog, sdlog) 
+#this find the log density function 
+y <- dlnorm(Sampledata$Volume, mealog= mean(Sampledata$Volume, sdlog = sd(Sampledata$Volume, na.rm = FALSE)) > 
+plot(Sampledata$Volume, y) 
