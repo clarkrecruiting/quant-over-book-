@@ -14,4 +14,5 @@ pnorm(.02, mean = mean(Sampledata$Return), sd = sd(Sampledata$Return, na.rm = FA
 
 qnorm(0.159837, mean = mean(Sampledata$Return), sd = +sd(Sampledata$Return, na.rm = FASLE), lower.tail = FALSE) 
 
+#this gives us an output 0.02, which means that for the return of greater than equal 2% the prob is 16% 
 
