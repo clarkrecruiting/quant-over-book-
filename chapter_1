@@ -26,3 +26,8 @@ rnorm(5, mean = mean(Sampledat$Reutrn), sd = +sd(Sampledata$Return, na.rm = FALS
 #this find the log density function 
 y <- dlnorm(Sampledata$Volume, mealog= mean(Sampledata$Volume, sdlog = sd(Sampledata$Volume, na.rm = FALSE)) > 
 plot(Sampledata$Volume, y) 
+
+#find volume CDF 
+
+y <- plnorm(Sampledata$Volume, meanlog = mean(Sampledata$Volume, na.rm = FSE)) > 
+plot(Sampledata$Volume, y) 
