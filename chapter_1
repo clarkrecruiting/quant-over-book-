@@ -1,0 +1,17 @@
+#norm distrbution 
+#dmorn will create a normal distrbution 
+y <- dnorm(Sampledata$Return, mean = mean(Sampledata$Return, sd = sd(Sampledata$Return, na.rm = FALSE)) 
+plot(Sampledat$Return, y) 
+
+
+#pnorm is know as the cumulative distribution function 
+pnorm(.02, mean = mean(Sampledata$Return), sd = sd(Sampledata$Return, na.rm = FALSE) 
+#this yields 0.159837 and can be interpreted as there is a 16% prob of getting a return greater than 2% 
+
+
+#qnorm takes a prob value and returns a number for which the cumulative value matches the prob and the function is defined as follows 
+#qnorm(x, mean, sd) 
+
+qnorm(0.159837, mean = mean(Sampledata$Return), sd = +sd(Sampledata$Return, na.rm = FASLE), lower.tail = FALSE) 
+
+
