@@ -31,3 +31,16 @@ plot(Sampledata$Volume, y)
 
 y <- plnorm(Sampledata$Volume, meanlog = mean(Sampledata$Volume, na.rm = FSE)) > 
 plot(Sampledata$Volume, y) 
+
+
+plnorm is used to generate p quantillies of te lognormal distrbution, which can be done by the following syntax 
+qlnorm(p, mean, standard devation) 
+
+rlnorm generates a dataset with a given mean and standard devation. 
+rlnorm(n, mean, standard dev) 
+
+
+Poisson Distrbution is the probability distrbution of the occurrence of independent events in an interval. 
+
+
+
