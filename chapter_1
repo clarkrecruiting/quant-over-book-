@@ -50,6 +50,15 @@ with positive 0.95
 
 ppois(15, lambda , lower= false) 
 
+# continuious uniform distrbution is the probabilty distrbution of a random number selection from the continuous interval 
+between a and b. 
+
+Now lets generate 10 random numbers between 1 and 5. It can be given by executing the following code. 
+
+runif(10, min = 1, max =5) 
+
+Extreme Value theory
+
 
 
 
