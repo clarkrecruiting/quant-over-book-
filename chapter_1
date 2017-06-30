@@ -27,6 +27,10 @@ rnorm(5, mean = mean(Sampledat$Reutrn), sd = +sd(Sampledata$Return, na.rm = FALS
 y <- dlnorm(Sampledata$Volume, mealog= mean(Sampledata$Volume, sdlog = sd(Sampledata$Volume, na.rm = FALSE)) > 
 plot(Sampledata$Volume, y) 
 
+
+
+
+
 #find volume CDF 
 
 y <- plnorm(Sampledata$Volume, meanlog = mean(Sampledata$Volume, na.rm = FSE)) > 
@@ -40,7 +44,18 @@ rlnorm generates a dataset with a given mean and standard devation.
 rlnorm(n, mean, standard dev) 
 
 
-Poisson Distrbution is the probability distrbution of the occurrence of independent events in an interval. 
+#Poisson Distrbution is the probability distrbution of the occurrence of independent events in an interval. 
+If there are, on average, 10 stocks whose returns per minute is getting positive, we can find the probability of having 15 stocks 
+with positive 0.95 
+
+ppois(15, lambda , lower= false) 
+
+
+
+
+
+
+
 
 
 
